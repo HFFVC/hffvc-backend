@@ -1,0 +1,496 @@
+{
+  "tests": [
+    {
+      "name": "CreateServiceRequest-Transaction Recording",
+      "serviceRequestVaultData": null,
+      "email": "TO BE SET",
+      "flowInput": {
+        "id": "1111",
+        "farmerId": "2",
+        "producer": "test1",
+        "location": "test1",
+        "department": "test1",
+        "town": "test1",
+        "requestedOn": "2020-01-24T00:00:00",
+        "estimatedNoFruits": "40",
+        "product": "PINEAPPLE",
+        "status": "test1",
+        "displayId": "displayId"
+      }
+    },
+    {
+      "name": "AcceptServiceRequest-Transaction Recording",
+      "email": "TO BE SET",
+      "serviceRequestVaultData": {
+        "id": "1111",
+        "creationData": {
+          "farmerId": "2",
+          "producer": "test1",
+          "location": "test1",
+          "department": "test1",
+          "town": "test1",
+          "requestedOn": "2020-01-24T00:00:00",
+          "estimatedNoFruits": "40",
+          "product": "PINEAPPLE",
+          "status": "test1",
+          "displayId": "displayId"
+        }
+      },
+      "flowInput": {
+        "id": "1111",
+        "status": "ACCEPTED",
+        "pickupAddedOn": "2020-01-24T00:00:00",
+        "collectorName": "test",
+        "collectionPoint": "test",
+        "dropOffAtPackhouse": "test",
+        "dateOfPickup": "2020-01-24T00:00:00",
+        "scheduled": "test",
+        "amount": "100",
+        "scheduledAfter": "5"
+      }
+    },
+    {
+      "name": "ArrivedAtPackhouse-Transaction Recording",
+      "email": "TO BE SET",
+      "serviceRequestVaultData": {
+        "id": "1111",
+        "creationData": {
+          "farmerId": "2",
+          "producer": "test1",
+          "location": "test1",
+          "department": "test1",
+          "town": "test1",
+          "requestedOn": "2020-01-24T00:00:00",
+          "estimatedNoFruits": "40",
+          "product": "PINEAPPLE",
+          "status": "test1",
+          "displayId": "displayId"
+        },
+        "acceptData": {
+          "pickupAddedOn": "2020-03-20T15:37:15",
+          "collectorName": "Collector Actor",
+          "collectionPoint": "Artibonite - Collection Point 2",
+          "dropOffAtPackhouse": "Tropical Tradings S.A.",
+          "dateOfPickup": "2020-03-21T15:36:00",
+          "scheduled": "true",
+          "amount": 0,
+          "scheduledAfter": 1
+        },
+        "enrouteToProducerData": {
+          "plannedPickUpAddedOn": "2020-03-20T00:00:00",
+          "enrouteAdditionalNote": "nothing"
+        },
+        "withProducerData": {
+          "temperature": "20.0",
+          "ambientTemp": "20.2",
+          "crates": "1.1",
+          "fruitsHarvested": "1000",
+          "fruitRejected": "0",
+          "advanceGiven": "10",
+          "currency": "USD",
+          "conversionRate": "1.99",
+          "conversionCurrency": "USD",
+          "startingQRCode": "A00011",
+          "endingQRCode": "A0020",
+          "paymentMethod": "Cash",
+          "withProducerTimeStamp": "2020-03-25T00:00:00",
+          "wirePaymentData": {
+            "SelectedBank": "SelectedBank",
+            "selectedBankCode": "selectedBankCode",
+            "AccountNumber": "AccountNumber",
+            "BankCurrency": "BankCurrency"
+          },
+          "AdditionalNotes": "nothing",
+          "withProducerQrCodeFile": [
+            "123",
+            "456"
+          ]
+        },
+        "enrouteToPackhouseData": {
+          "enroutePackhouseAddedOn": "2020-03-30T00:00:00",
+          "enroutePackhouseAdditionalNote": "nothing",
+          "dropOffAtPackhouse": "Packhouse name"
+        }
+      },
+      "flowInput": {
+        "id": "1111",
+        "status": "ARRIVED_AT_PACKHOUSE",
+        "arrivedAtPackhouseAddedOn": "2020-04-01T00:00:00",
+        "arrivedAtPackhouseAdditionalNote": "Nothing",
+        "transportCostArrivedAtPackhouse": "100",
+        "timeOfAdmittance": "2020-04-07T00:00:00"
+      }
+    },
+    {
+      "name": "FruitFlow-Transaction Recording",
+      "email": "TO BE SET",
+      "serviceRequestVaultData": {
+        "id": "1111",
+        "creationData": {
+          "farmerId": "2",
+          "producer": "test1",
+          "location": "test1",
+          "department": "test1",
+          "town": "test1",
+          "requestedOn": "2020-01-24T00:00:00",
+          "estimatedNoFruits": "40",
+          "product": "PINEAPPLE",
+          "status": "test1",
+          "displayId": "displayId"
+        },
+        "acceptData": {
+          "pickupAddedOn": "2020-03-20T15:37:15",
+          "collectorName": "Collector Actor",
+          "collectionPoint": "Artibonite - Collection Point 2",
+          "dropOffAtPackhouse": "Tropical Tradings S.A.",
+          "dateOfPickup": "2020-03-21T15:36:00",
+          "scheduled": "true",
+          "amount": 0,
+          "scheduledAfter": 1
+        },
+        "enrouteToProducerData": {
+          "plannedPickUpAddedOn": "2020-03-20T00:00:00",
+          "enrouteAdditionalNote": "nothing"
+        },
+        "withProducerData": {
+          "temperature": "20.0",
+          "ambientTemp": "20.2",
+          "crates": "1.1",
+          "fruitsHarvested": "1000",
+          "fruitRejected": "0",
+          "advanceGiven": "10",
+          "currency": "USD",
+          "conversionRate": "1.99",
+          "conversionCurrency": "USD",
+          "startingQRCode": "A00011",
+          "endingQRCode": "A0020",
+          "paymentMethod": "Cash",
+          "withProducerTimeStamp": "2020-03-25T00:00:00",
+          "wirePaymentData": {
+            "SelectedBank": "SelectedBank",
+            "selectedBankCode": "selectedBankCode",
+            "AccountNumber": "AccountNumber",
+            "BankCurrency": "BankCurrency"
+          },
+          "AdditionalNotes": "nothing",
+          "withProducerQrCodeFile": [
+            "123",
+            "456"
+          ]
+        },
+        "enrouteToPackhouseData": {
+          "enroutePackhouseAddedOn": "2020-03-30T00:00:00",
+          "enroutePackhouseAdditionalNote": "nothing",
+          "dropOffAtPackhouse": "Packhouse name"
+        },
+        "arrivedAtPackhouseData": {
+          "arrivedAtPackhouseAddedOn": "2020-04-01T00:00:00",
+          "arrivedAtPackhouseAdditionalNote": "Nothing",
+          "transportCostArrivedAtPackhouse": "100",
+          "timeOfAdmittance": "2020-04-07T00:00:00"
+        },
+        "fruitFlowData": {
+          "larvaeTestingData": {
+            "larvaeTesting": "pass"
+          },
+          "temperatureMeasurementData": {
+            "ambientTemp": "22",
+            "internalFruitTemp": "22",
+            "isTemepertaureBreach": "true",
+            "temperatureBreachCount": "1"
+          },
+          "qualityInspectionData": {
+            "fruitsAccepted": "1000",
+            "fruitsRejected": "0",
+            "qualityInspectionResults": "pass"
+          },
+          "cleaningAndTrimmingData": {
+            "dateTimeCleaningTrimming": "2020-01-24T00:00:00"
+          },
+          "fruitWashingData": {
+            "waterTemperature": "20",
+            "phLevel": "20",
+            "chlorineLevel": "20"
+          },
+          "feedPackingLineConveyorData": {
+            "packingLineTimeofEntry": "2020-01-24T00:00:00"
+          },
+          "gradingData": {
+            "gradingResults": "pass",
+            "weightofRemovedFruit": "10"
+          },
+          "secondSizingData": {
+            "secondSizingResults": "pass"
+          }
+        }
+      },
+      "flowInput": {
+        "id": "1111",
+        "step": "CARTON_FILLING_AND_PALLETIZING",
+        "cartonFillingAndPalletizing": {
+          "startQRCodeBoxes": "A00010",
+          "endQRCodeBoxes": "A00012",
+          "startQRCodeFruits": "A00010-100",
+          "endQRCodeFruits": "A00010-110"
+        }
+      }
+    },
+    {
+      "name": "CreateBatch-Transaction Recording",
+      "email": "TO BE SET",
+      "serviceRequestVaultData": {
+        "id": "1111",
+        "creationData": {
+          "farmerId": "2",
+          "producer": "test1",
+          "location": "test1",
+          "department": "test1",
+          "town": "test1",
+          "requestedOn": "2020-01-24T00:00:00",
+          "estimatedNoFruits": "40",
+          "product": "PINEAPPLE",
+          "status": "test1",
+          "displayId": "displayId"
+        },
+        "acceptData": {
+          "pickupAddedOn": "2020-03-20T15:37:15",
+          "collectorName": "Collector Actor",
+          "collectionPoint": "Artibonite - Collection Point 2",
+          "dropOffAtPackhouse": "Tropical Tradings S.A.",
+          "dateOfPickup": "2020-03-21T15:36:00",
+          "scheduled": "true",
+          "amount": 0,
+          "scheduledAfter": 1
+        },
+        "enrouteToProducerData": {
+          "plannedPickUpAddedOn": "2020-03-20T00:00:00",
+          "enrouteAdditionalNote": "nothing"
+        },
+        "withProducerData": {
+          "temperature": "20.0",
+          "ambientTemp": "20.2",
+          "crates": "1.1",
+          "fruitsHarvested": "1000",
+          "fruitRejected": "0",
+          "advanceGiven": "10",
+          "currency": "USD",
+          "conversionRate": "1.99",
+          "conversionCurrency": "USD",
+          "startingQRCode": "A00011",
+          "endingQRCode": "A0020",
+          "paymentMethod": "Cash",
+          "withProducerTimeStamp": "2020-03-25T00:00:00",
+          "wirePaymentData": {
+            "SelectedBank": "SelectedBank",
+            "selectedBankCode": "selectedBankCode",
+            "AccountNumber": "AccountNumber",
+            "BankCurrency": "BankCurrency"
+          },
+          "AdditionalNotes": "nothing",
+          "withProducerQrCodeFile": [
+            "123",
+            "456"
+          ]
+        },
+        "enrouteToPackhouseData": {
+          "enroutePackhouseAddedOn": "2020-03-30T00:00:00",
+          "enroutePackhouseAdditionalNote": "nothing",
+          "dropOffAtPackhouse": "Packhouse name"
+        },
+        "arrivedAtPackhouseData": {
+          "arrivedAtPackhouseAddedOn": "2020-04-01T00:00:00",
+          "arrivedAtPackhouseAdditionalNote": "Nothing",
+          "transportCostArrivedAtPackhouse": "100",
+          "timeOfAdmittance": "2020-04-07T00:00:00"
+        },
+        "fruitFlowData": {
+          "larvaeTestingData": {
+            "larvaeTesting": "pass"
+          },
+          "temperatureMeasurementData": {
+            "ambientTemp": "22",
+            "internalFruitTemp": "22",
+            "isTemepertaureBreach": "true",
+            "temperatureBreachCount": "1"
+          },
+          "qualityInspectionData": {
+            "fruitsAccepted": "1000",
+            "fruitsRejected": "0",
+            "qualityInspectionResults": "pass"
+          },
+          "cleaningAndTrimmingData": {
+            "dateTimeCleaningTrimming": "2020-01-24T00:00:00"
+          },
+          "fruitWashingData": {
+            "waterTemperature": "20",
+            "phLevel": "20",
+            "chlorineLevel": "20"
+          },
+          "feedPackingLineConveyorData": {
+            "packingLineTimeofEntry": "2020-01-24T00:00:00"
+          },
+          "gradingData": {
+            "gradingResults": "pass",
+            "weightofRemovedFruit": "10"
+          },
+          "secondSizingData": {
+            "secondSizingResults": "pass"
+          },
+          "cartonFillingAndPalletizingData": {
+            "startQRCodeBoxes": "A00010",
+            "endQRCodeBoxes": "A00012",
+            "startQRCodeFruits": "A00010-100",
+            "endQRCodeFruits": "A00010-110"
+          }
+        }
+      },
+      "flowInput": {
+        "batchId": "batchId",
+        "batchCreatedAt": "2020-04-24T00:00:00",
+        "lotIds": ["1111"],
+        "palletStartQRCode": "P0001",
+        "palletEndQRCode": "P0005"
+      }
+    },
+    {
+      "name": "NewSale-Transaction Recording",
+      "email": "TO BE SET",
+      "serviceRequestVaultData": {
+        "id": "1111",
+        "creationData": {
+          "farmerId": "2",
+          "producer": "test1",
+          "location": "test1",
+          "department": "test1",
+          "town": "test1",
+          "requestedOn": "2020-01-24T00:00:00",
+          "estimatedNoFruits": "40",
+          "product": "PINEAPPLE",
+          "status": "test1",
+          "displayId": "displayId"
+        },
+        "acceptData": {
+          "pickupAddedOn": "2020-03-20T15:37:15",
+          "collectorName": "Collector Actor",
+          "collectionPoint": "Artibonite - Collection Point 2",
+          "dropOffAtPackhouse": "Tropical Tradings S.A.",
+          "dateOfPickup": "2020-03-21T15:36:00",
+          "scheduled": "true",
+          "amount": 0,
+          "scheduledAfter": 1
+        },
+        "enrouteToProducerData": {
+          "plannedPickUpAddedOn": "2020-03-20T00:00:00",
+          "enrouteAdditionalNote": "nothing"
+        },
+        "withProducerData": {
+          "temperature": "20.0",
+          "ambientTemp": "20.2",
+          "crates": "1.1",
+          "fruitsHarvested": "1000",
+          "fruitRejected": "0",
+          "advanceGiven": "10",
+          "currency": "USD",
+          "conversionRate": "1.99",
+          "conversionCurrency": "USD",
+          "startingQRCode": "A00011",
+          "endingQRCode": "A0020",
+          "paymentMethod": "Cash",
+          "withProducerTimeStamp": "2020-03-25T00:00:00",
+          "wirePaymentData": {
+            "SelectedBank": "SelectedBank",
+            "selectedBankCode": "selectedBankCode",
+            "AccountNumber": "AccountNumber",
+            "BankCurrency": "BankCurrency"
+          },
+          "AdditionalNotes": "nothing",
+          "withProducerQrCodeFile": [
+            "123",
+            "456"
+          ]
+        },
+        "enrouteToPackhouseData": {
+          "enroutePackhouseAddedOn": "2020-03-30T00:00:00",
+          "enroutePackhouseAdditionalNote": "nothing",
+          "dropOffAtPackhouse": "Packhouse name"
+        },
+        "arrivedAtPackhouseData": {
+          "arrivedAtPackhouseAddedOn": "2020-04-01T00:00:00",
+          "arrivedAtPackhouseAdditionalNote": "Nothing",
+          "transportCostArrivedAtPackhouse": "100",
+          "timeOfAdmittance": "2020-04-07T00:00:00"
+        },
+        "fruitFlowData": {
+          "larvaeTestingData": {
+            "larvaeTesting": "pass"
+          },
+          "temperatureMeasurementData": {
+            "ambientTemp": "22",
+            "internalFruitTemp": "22",
+            "isTemepertaureBreach": "true",
+            "temperatureBreachCount": "1"
+          },
+          "qualityInspectionData": {
+            "fruitsAccepted": "1000",
+            "fruitsRejected": "0",
+            "qualityInspectionResults": "pass"
+          },
+          "cleaningAndTrimmingData": {
+            "dateTimeCleaningTrimming": "2020-01-24T00:00:00"
+          },
+          "fruitWashingData": {
+            "waterTemperature": "20",
+            "phLevel": "20",
+            "chlorineLevel": "20"
+          },
+          "feedPackingLineConveyorData": {
+            "packingLineTimeofEntry": "2020-01-24T00:00:00"
+          },
+          "gradingData": {
+            "gradingResults": "pass",
+            "weightofRemovedFruit": "10"
+          },
+          "secondSizingData": {
+            "secondSizingResults": "pass"
+          },
+          "cartonFillingAndPalletizingData": {
+            "startQRCodeBoxes": "A00010",
+            "endQRCodeBoxes": "A00012",
+            "startQRCodeFruits": "A00010-100",
+            "endQRCodeFruits": "A00010-110"
+          }
+        },
+        "batchId": "batchId",
+        "remainingBoxes": "1"
+      },
+      "batchData": {
+        "batchId": "batchId",
+        "batchCreatedAt": "2020-04-24T00:00:00",
+        "palletStartQRCode": "P0001",
+        "palletEndQRCode": "P0005"
+      },
+      "flowInput": {
+        "saleId": "sale123",
+        "batchId": "batchId",
+        "sellBuyerName": "sellBuyerName",
+        "sellBuyerAddress": "sellBuyerAddress",
+        "sellBuyerOrganization": "sellBuyerOrganization",
+        "sellBuyerContactDetails": "sellBuyerContactDetails",
+        "sellBuyerEmailAddress": "TO BE SET",
+        "saleTransactionDate": "2020-01-24T00:00:00",
+        "totalNoOfBoxesSold": "1",
+        "soldProduct": "MANGO",
+        "salesPricePerKg": "6",
+        "salesWeightPerBox": "5",
+        "salesCurrency": "USD",
+        "salesBrokerMargin": "10",
+        "lots": [
+          {
+            "id": "1111",
+            "boxesSold": "1"
+          }
+        ]
+      }
+    }
+  ]
+}

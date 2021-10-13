@@ -1,0 +1,227 @@
+{
+  "fields": [
+    {
+      "state": "SERVICE_REQUEST_STATE",
+      "fieldsToAnonymize": [
+        {
+          "pathElements": [],
+          "key": "signatories"
+        },
+        {
+          "pathElements": [],
+          "key": "participants"
+        },
+        {
+          "pathElements": [],
+          "key": "sae"
+        },
+        {
+          "pathElements": [],
+          "key": "lsp"
+        },
+        {
+          "pathElements": [],
+          "key": "collector"
+        },
+        {
+          "pathElements": [],
+          "key": "broker"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "producer"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "location"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "town"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "phoneNo"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "cin"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "nif"
+        },
+        {
+          "pathElements": ["acceptData"],
+          "key": "collectorName"
+        },
+        {
+          "pathElements": ["acceptData"],
+          "key": "collectionPoint"
+        },
+        {
+          "pathElements": ["acceptData"],
+          "key": "collectionPoint"
+        },
+        {
+          "pathElements": ["withProducerData"],
+          "key": "cashPaymentData"
+        },
+        {
+          "pathElements": ["withProducerData"],
+          "key": "mobilePaymentData"
+        },
+        {
+          "pathElements": ["withProducerData"],
+          "key": "wirePaymentData"
+        }
+      ]
+    },
+    {
+      "state": "BATCH_STATE",
+      "fieldsToAnonymize": [
+        {
+          "pathElements": [],
+          "key": "signatories"
+        },
+        {
+          "pathElements": [],
+          "key": "participants"
+        },
+        {
+          "pathElements": [],
+          "key": "sae"
+        },
+        {
+          "pathElements": [],
+          "key": "lsp"
+        },
+        {
+          "pathElements": [],
+          "key": "collector"
+        },
+        {
+          "pathElements": [],
+          "key": "broker"
+        },
+        {
+          "pathElements": ["proformaInvoiceData"],
+          "key": "batchProforma_FullName"
+        },
+        {
+          "pathElements": ["proformaInvoiceData"],
+          "key": "batchProforma_Email"
+        },
+        {
+          "pathElements": ["proformaInvoiceData"],
+          "key": "batchProforma_Selling_AddressLine1"
+        },
+        {
+          "pathElements": ["proformaInvoiceData"],
+          "key": "batchProforma_Selling_AddressLine2"
+        },
+        {
+          "pathElements": ["proformaInvoiceData"],
+          "key": "batchProforma_Selling_AddressLine3"
+        },
+        {
+          "pathElements": ["proformaInvoiceData"],
+          "key": "batchProforma_Shipping_AddressLine1"
+        },
+        {
+          "pathElements": ["proformaInvoiceData"],
+          "key": "batchProforma_Shipping_AddressLine2"
+        },
+        {
+          "pathElements": ["proformaInvoiceData"],
+          "key": "batchProforma_Shipping_AddressLine3"
+        }
+      ]
+    },
+    {
+      "state": "SALE_STATE",
+      "fieldsToAnonymize": [
+        {
+          "pathElements": [],
+          "key": "signatories"
+        },
+        {
+          "pathElements": [],
+          "key": "participants"
+        },
+        {
+          "pathElements": [],
+          "key": "sae"
+        },
+        {
+          "pathElements": [],
+          "key": "lsp"
+        },
+        {
+          "pathElements": [],
+          "key": "collector"
+        },
+        {
+          "pathElements": [],
+          "key": "broker"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "sellBuyerName"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "sellBuyerAddress"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "sellBuyerOrganization"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "sellBuyerContactDetails"
+        },
+        {
+          "pathElements": ["creationData"],
+          "key": "sellBuyerEmailAddress"
+        },
+        {
+          "pathElements": ["shipOrderData"],
+          "key": "buyersLocation"
+        },
+        {
+          "pathElements": ["salesInvoiceData"],
+          "key": "invoiceNo"
+        },
+        {
+          "pathElements": ["salesInvoiceData"],
+          "key": "brokerName"
+        },
+        {
+          "pathElements": ["salesInvoiceData"],
+          "key": "brokerOrganization"
+        },
+        {
+          "pathElements": ["salesInvoiceData"],
+          "key": "buyerName"
+        },
+        {
+          "pathElements": ["salesInvoiceData"],
+          "key": "buyerOrganization"
+        },
+        {
+          "pathElements": ["confirmPaymentData"],
+          "key": "factoringEntity"
+        },
+        {
+          "pathElements": ["confirmPaymentData"],
+          "key": "factoringAgent"
+        },
+        {
+          "pathElements": ["confirmPaymentData"],
+          "key": "factoringContactDetails"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "environment": "TEST",
+  "configs": [
+    {
+      "env": "TEST",
+      "baseUrl": "",
+      "sendGridKey": "",
+      "firebaseDatabaseUrl": "",
+      "firebaseClasspath": "classpath:test-firebase-adminsdk.json",
+      "ccAddresses": [],
+      "adminAddresses": [],
+      "nodeExplorerUsers": [],
+      "supportEmail": "",
+      "supportEmailFrom" : ""
+    }
+  ]
+}
