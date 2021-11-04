@@ -10,10 +10,10 @@ The features available in the Node-Explorer include:
 * Ledger visualization at multiple levels
 * Export of States in Excel format
 
-##Configuration
+## Configuration
 The solution has to be configured by setting the appropriate values inside the config-vars.js file (present in src\utils).
 
-##Running the Node Explorer
+## Running the Node Explorer
 * Set up the project
     ```
     npm install

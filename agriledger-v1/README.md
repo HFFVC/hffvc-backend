@@ -10,17 +10,17 @@ The project's components can be broadly listed down as below:
 * workflows - Corda workflows, which define the transactions to be initiated and recorded in the system.
 * clients - The API Layer, which specifies the APIs required for interacting with the Corda Network.
 
-##Configuration
+## Configuration
 Here are the steps for configuring the solution, before setting up the nodes, and the API services.
 
-###clients
+### clients
 * Update the settings.json file with appropriate values.
 * Update the test-firebase-adminsdk.json file with the details for connecting to a Firebase instance.
 
-###workflows
+### workflows
 * Check for the fields tagged as "TO BE SET" inside the test_data.json (present in workflows/src/test/resources) and update the values accordingly. This step would be required only if we are planning to run the flow tests.
 
-##Building and running the nodes
+## Building and running the nodes
 1. Deploy the nodes.
    ```
    gradlew clean deployNodes
@@ -30,7 +30,7 @@ Here are the steps for configuring the solution, before setting up the nodes, an
     build\nodes\runnodes
     ```
 
-##Building and deploying the API Layer
+## Building and deploying the API Layer
 1. Start the Spring Boot Server for each party using the appropriate gradle task.
 For instance, SAE API Server can be started using the below command:
    ```
