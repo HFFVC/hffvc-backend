@@ -9,3 +9,22 @@ The features available in the Node-Explorer include:
 * Navigation by Ids
 * Ledger visualization at multiple levels
 * Export of States in Excel format
+
+##Configuration
+The solution has to be configured by setting the appropriate values inside the config-vars.js file (present in src\utils).
+
+##Running the Node Explorer
+* Set up the project
+    ```
+    npm install
+    ```
+
+* Compile and run the solution
+    ```
+    npm run serve
+    ```
+  
+* Compile and minify for production
+    ```
+    npm run build
+    ```
